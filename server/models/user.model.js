@@ -1,57 +1,64 @@
 import mongoose from "mongoose"
 
 const UserSchema = mongoose.Schema({
-    username:{
-        type:String,
-        required:true,
-        unique:true
+    username: {
+        type: String,
+        required: true,
+        unique: true
     },
-    fullName:{
-        type:String,
-        required:true
+    fullName: {
+        type: String,
+        required: true
     },
-    email:{
-        type:String,
-        required:true,
-        unique:true
+    email: {
+        type: String,
+        required: true,
+        unique: true
     },
-    password:{
-        type:String,
-        required:true,
-        minLength:6
+    password: {
+        type: String,
+        required: true,
+        minLength: 6
     },
-    followers:[
+    followers: [
         {
-            type:mongoose.Schema.Types.ObjectId,
-            ref:"User",
-            default:[]
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User",
+            default: []
         }
     ],
-    following:[
+    following: [
         {
-            type:mongoose.Schema.Types.ObjectId,
-            ref:"User",
-            default:[]
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User",
+            default: []
         }
     ],
-    profileImg:{
-        type:String,
-        default:""
+    profileImg: {
+        type: String,
+        default: ""
     },
-    coverImg:{
-        type:String,
-        default:""
+    coverImg: {
+        type: String,
+        default: ""
     },
-    bio:{
-        type:String,
-        default:""
+    bio: {
+        type: String,
+        default: ""
     },
-    link:{
-        type:String,
-        default:""
-    }
-},{timestamps :true})
+    link: {
+        type: String,
+        default: ""
+    },
+    likedPost:[
+        {
+            type:mongoose.Schema.Types.ObjectId,
+            ref:"Post",
+            default:[]
+        }
+    ]
+}, { timestamps: true })
 
-const User = mongoose.model("User",UserSchema);
+const User = mongoose.model("User", UserSchema);
 
 export default User
