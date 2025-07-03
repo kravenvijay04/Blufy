@@ -1,2 +1,2 @@
 # Blufy 
-tweet app
+tweet like app
