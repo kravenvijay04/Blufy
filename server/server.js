@@ -26,7 +26,7 @@ web.get("/", (req, res) => {
     res.send("Hello World");
 })
 web.use(cors({
-    origin: "http://localhost:5173",
+    origin: `${process.env.APPLICATION_URL}`,
     credentials: true
 }))
 web.use(express.json(
@@ -45,7 +45,7 @@ web.use("/api/notifications", notificationRoute)
 
 
 
-    web.listen(PORT, () => {
-        console.log(`Server is running on http://localhost:${PORT}`)
-        connectDB();
-    })
+web.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`)
+    connectDB();
+})
