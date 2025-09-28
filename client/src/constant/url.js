@@ -1,1 +1,1 @@
-export const baseurl = "http://localhost:4444"
+export const baseurl = import.meta.env.VITE_BACK_END;
