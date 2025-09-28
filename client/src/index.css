@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    /* light bluish shade */
+    font-family: sans-serif;
+}
