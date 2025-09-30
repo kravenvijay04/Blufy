@@ -38,7 +38,7 @@ const Post = ({ post }) => {
             }
         },
         onSuccess: () => {
-            toast.success("Post Deleted Successfully");
+            toast.success("UnBlufed");
             queryClient.invalidateQueries({ queryKey: ["posts"] })
         }
     })
@@ -108,7 +108,7 @@ const Post = ({ post }) => {
             }
         },
         onSuccess: ()=>{
-            toast.success("Comment posted Successfully");
+            toast.success("Commented Successfully");
             setComment("");
             queryClient.invalidateQueries({queryKey:["posts"]})
         },
