@@ -51,7 +51,7 @@ const CreatePost = () => {
 		onSuccess: () => {
 			setImg(null);
 			setText("")
-			toast.success("Post created Successfully");
+			toast.success("Blufed Successfully");
 			queryClient.invalidateQueries({ queryKey: ["posts"] })
 		}
 	})
@@ -116,7 +116,7 @@ const CreatePost = () => {
 					</div>
 					<input type='file' hidden ref={imgRef} onChange={handleImgChange} />
 					<button className='btn btn-primary rounded-full btn-sm text-white px-4'>
-						{isPending ? <LoadingSpinner size="sm" /> : "Post"}
+						{isPending ? <LoadingSpinner size="sm" /> : "Bluf"}
 					</button>
 				</div>
 				{isError && <div className='text-red-500'>{error.message}</div>}
