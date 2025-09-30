@@ -13,7 +13,7 @@ import connectDB from "./db/connectDB.js";
 
 dotenv.config();
 
-const _dirname = path.resolve();
+// const _dirname = path.resolve();
 
 cloudinary.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -38,12 +38,12 @@ web.use("/api/users", userRoute);
 web.use("/api/posts", postRoute);
 web.use("/api/notifications", notificationRoute);
 
-if (process.env.NODE_ENV === "production") {
-    web.use(express.static(path.join(_dirname, "/client/dist")));
-    web.use("*", (req, res) => {
-        res.sendFile(path.resolve(_dirname, "client", "dist", "index.html"));
-    });
-}
+// if (process.env.NODE_ENV === "production") {
+//     web.use(express.static(path.join(_dirname, "/client/dist")));
+//     web.use("*", (req, res) => {
+//         res.sendFile(path.resolve(_dirname, "client", "dist", "index.html"));
+//     });
+// }
 
 web.get("/", (req, res) => {
     res.send("Hello World");
