@@ -43,7 +43,8 @@ const Sidebar = () => {
     <div className="md:flex-[2_2_0] w-18 max-w-52">
       <div className="sticky top-0 left-0 h-screen flex flex-col border-r border-gray-700 w-20 md:w-full">
         <Link to="/" className="flex justify-center md:justify-start">
-          <img src="logo.png" width="30px" height="30px" />
+        <span></span>
+          <img src="logo.png" width="50px" height="50px" />
         </Link>
         <ul className="flex flex-col gap-3 mt-4">
           <li className="flex justify-center md:justify-start">
