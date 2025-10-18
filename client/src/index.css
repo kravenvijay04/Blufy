@@ -4,7 +4,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #030711;
-    /* light bluish shade */
     font-family: sans-serif;
+    background: linear-gradient(180deg, #010b1f, #24244e);
 }
