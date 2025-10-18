@@ -42,9 +42,9 @@ const Sidebar = () => {
   return (
     <div className="md:flex-[2_2_0] w-18 max-w-52">
       <div className="sticky top-0 left-0 h-screen flex flex-col border-r border-gray-700 w-20 md:w-full">
-        <Link to="/" className="flex justify-center md:justify-start">
+        {/* <Link to="/" className="flex justify-center md:justify-start">
           <XSvg className="px-2 w-1 h-1 rounded-full" />
-        </Link>
+        </Link> */}
         <ul className="flex flex-col gap-3 mt-4">
           <li className="flex justify-center md:justify-start">
             <Link
