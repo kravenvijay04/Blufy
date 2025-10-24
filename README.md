@@ -1,4 +1,4 @@
-<h1 align="center"><img src="client/public/images/logo.png" alt="logo" width="60"/>  Blufy - Social Media Application</h1>
+<h1 align="center"><img src="client/public/logo.png" alt="logo" width="30"/>📱 Blufy - Social Media Application</h1>
 
 <p align="center">
   Blufy is a modern social media platform that allows users to connect, share content, and interact in a clean and responsive interface.
